@@ -28,6 +28,7 @@ app.route('/api')
     const json = await data.json();
     console.log('data from fetch', json[0]);
     res.json(json);
+    //res.send(`Lab 5 for ${process.env.NAME}`);
   })
   .post(async (req, res) => {
     console.log('POST request detected');
