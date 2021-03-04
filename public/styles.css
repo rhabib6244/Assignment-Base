@@ -1,14 +1,12 @@
 body {
-    background-color:#FCFA88;
+    background-color: #C3EBDD;
 }
 
-h4 {
-    text-decoration: underline;
-}
 .assignment {
     position: absolute;
     top: 60px;
     font-family: Helvetica;
+    text-decoration: underline;
 }
 .container{
     height: 700px;
@@ -28,19 +26,4 @@ h4 {
     justify-content: space-between;
   }
 
-/*.flex-outer li button 
-    margin-right: auto;
-    padding: 8px 16px;
-    border: none;
-    background: white;
-    color: black;
-    text-transform: uppercase;
-    letter-spacing: .09em;
-    border-radius: 2px;
-  
-
-  .flex-outer li
-    width: 50%;
-    margin-right: auto;
-  
  
