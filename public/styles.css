@@ -27,3 +27,17 @@ body {
   }
 
  
+.content {
+    width: 960px;
+    margin: auto;
+}
+
+
+.column-background {
+    background-color: blue;
+    height: 100px;
+}
+
+.targetBox {
+
+}
