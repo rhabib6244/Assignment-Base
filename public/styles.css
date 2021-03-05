@@ -4,12 +4,14 @@ html {
 h1 {
     color: white;
 }
-
+.member-names {
+    margin-left: 10px;
+}
 .assign1 {
     margin-top: 30px;
     text-decoration: underline;
     font-size: 30px;
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .assignment {
