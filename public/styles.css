@@ -10,9 +10,7 @@ h4 {
     top: 60px;
     font-family: Helvetica;
 }
-.container{
-    height: 100%;
-}
+
 .flex-outer {
     display: flex;
     flex-wrap: wrap;
