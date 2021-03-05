@@ -1,9 +1,31 @@
 body {
-    background-color: yellow;
+    background-color: #C3EBDD;
 }
 
+h4 {
+    text-decoration: underline;
+}
+.assignment {
+    position: absolute;
+    top: 60px;
+    font-family: Helvetica;
+}
 .container{
     height: 700px;
+}
+.flex-outer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto; 
+    position: absolute;
+    top: 100px;
+    width: 450px;
+    padding: 10px 30px;
+    border: 1px solid #CCC;
+    border-radius: 15px;
+    background: #eee;
+    justify-content: space-between;
 }
 .content {
     width: 960px;
@@ -16,6 +38,18 @@ body {
     height: 100px;
 }
 
-.targetBox {
-
+.target-list {
+    margin-top: 200px;
 }
+
+li {
+    background-color: red;
+    height: 120px;
+    width: 300px;
+    margin: 40px;
+}
+
+    
+
+ 
+
