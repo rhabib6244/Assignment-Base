@@ -1,14 +1,15 @@
 body {
-    background-color: #C3EBDD;
+    background-color:#8987B2;
+}
+.assign1 {
+    margin-top: 30px;
+    text-decoration: underline;
+    font-size: 30px;
+    margin-left: 15px;
 }
 
-h4 {
-    text-decoration: underline;
-}
-.assignment {
-    position: absolute;
-    top: 60px;
-    font-family: Helvetica;
+.container{
+    min-height: 100%;
 }
 
 .flex-outer {
@@ -17,7 +18,7 @@ h4 {
     align-items: center;
     margin: auto; 
     position: absolute;
-    top: 100px;
+    top: 130px;
     width: 450px;
     padding: 10px 30px;
     border: 1px solid #CCC;
@@ -37,14 +38,18 @@ h4 {
 }
 
 .target-list {
-    margin-top: 200px;
+    margin-top: 115px;
+    position: relative;
 }
 
 li {
     background-color: red;
-    height: 120px;
-    width: 300px;
+    height: 140px;
+    width: 350px;
     margin: 40px;
+    padding:10px 10px;
+    font-family: helvetica;
+    background-image: linear-gradient(to bottom, #C3EBDD ,white );
 }
 
     
