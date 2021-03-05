@@ -1,17 +1,24 @@
 html {
     background-color: #8987B2;
 }
+.container {
+    max-width: 960px;
+}
 h1 {
     color: white;
+    font-family: 'Akaya Telivigala', cursive;
+    font-weight: bold;
 }
 .member-names {
     margin-left: 10px;
 }
+
 .assign1 {
     margin-top: 30px;
     text-decoration: underline;
     font-size: 30px;
-    margin-left: 20px;
+    margin-left: 15px;
+    font-family:'Open Sans', sans-serif;
 }
 
 .assignment {
@@ -66,6 +73,7 @@ li {
 .address,.location,.zip {
     font-style: italic;
 }
+
 span {
     display: block;
 }
