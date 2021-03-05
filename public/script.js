@@ -18,8 +18,24 @@ async function windowActions() {
           };
         display.forEach((item) => {
             const appendItem = document.createElement("li");
-            appendItem.innerText = (item.name + "\n" + item.category + "\n" + item.address_line_1 + "\n" + item.city + ", " + item.state + "\n" + item.zip);
-            targetList.append(appendItem);
+            const linebreak = '\r\n'
+            const html = display.map(place => {
+            return (`
+              <li>
+              <span class='name'>${place.name} </span> 
+              <span class='category'>${place.category}</span>
+              <span class='address'>${place.address_line_1}</span>
+              <span class='location'>${place.city}, ${place.state}</span>
+              <span class='zip'>${place.zip}</span>
+              </li>
+            `);
+    })
+
+    targetList.innerHTML = html;
+            //appendItem.innerText = (item.name + "\n" + item.category + "\n" + item.address_line_1 + "\n" + item.city + ", " + item.state + "\n" + item.zip);         
+
+            //console.log(appendItem)
+            //targetList.append(appendItem)
         })
         console.log(display);
         console.table(display);
