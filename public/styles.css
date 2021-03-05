@@ -11,7 +11,7 @@ h4 {
     font-family: Helvetica;
 }
 .container{
-    height: 700px;
+    height: 1000px;
 }
 .flex-outer {
     display: flex;
