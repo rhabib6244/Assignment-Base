@@ -3,6 +3,7 @@ async function windowActions() {
     const form = document.querySelector(".userform");
     const search = document.querySelector("#category");
     const targetList = document.querySelector('.target-list');
+    let suggestions = [];
 
     const request = await fetch('/api');
     const data = await request.json();
@@ -10,15 +11,19 @@ async function windowActions() {
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
         console.log("submit fired");
-        const display = data.filter((record) => record.category.toUpperCase() === search.value.toUpperCase());
+        const d = data.filter(((record) => record.category.toUpperCase() === search.value.toUpperCase()));
+        const display = d.reduce((unique, o) => {
+          if(!unique.some(obj => obj.address_line_1 === o.address_line_1 && obj.city === o.city && obj.state === o.state)) {
+            unique.push(o);
+          } return unique;
+        },[]);
         while (targetList.firstChild) {
           targetList.removeChild(targetList.firstChild)
         };
         display.forEach((item) => {
             const appendItem = document.createElement("li");
-            const linebreak = '\r\n'
             const html = display.map(place => {
-            return (`
+              return (`
               <li>
               <span class='name'>${place.name} </span> 
               <span class='category'>${place.category}</span>
@@ -28,12 +33,8 @@ async function windowActions() {
               </li>
             `);
     })
-
-    targetList.innerHTML = html;
-            //appendItem.innerText = (item.name + "\n" + item.category + "\n" + item.address_line_1 + "\n" + item.city + ", " + item.state + "\n" + item.zip);         
-
-            //console.log(appendItem)
-            //targetList.append(appendItem)
+        targetList.innerHTML = html;
+        
         })
         console.log(display);
         console.table(display);
