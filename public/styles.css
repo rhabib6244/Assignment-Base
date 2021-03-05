@@ -2,11 +2,13 @@ body {
     background-color: #C3EBDD;
 }
 
+h4 {
+    text-decoration: underline;
+}
 .assignment {
     position: absolute;
     top: 60px;
     font-family: Helvetica;
-    text-decoration: underline;
 }
 .container{
     height: 700px;
@@ -24,9 +26,7 @@ body {
     border-radius: 15px;
     background: #eee;
     justify-content: space-between;
-  }
-
- 
+}
 .content {
     width: 960px;
     margin: auto;
@@ -38,6 +38,18 @@ body {
     height: 100px;
 }
 
-.targetBox {
-
+.target-list {
+    margin-top: 200px;
 }
+
+li {
+    background-color: red;
+    height: 120px;
+    width: 300px;
+    margin: 40px;
+}
+
+    
+
+ 
+
