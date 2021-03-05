@@ -1,9 +1,14 @@
 body {
-    background-color: #C3EBDD;
+    background-color:#8987B2;
+}
+.assign1 {
+    margin-top: 15px;
+    text-decoration: underline;
+    font-size: 30px;
 }
 
-h4 {
-    text-decoration: underline;
+.container{
+    min-height: 100%;
 }
 .assignment {
     position: absolute;
@@ -37,14 +42,16 @@ h4 {
 }
 
 .target-list {
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 li {
     background-color: red;
-    height: 120px;
+    height: 140px;
     width: 300px;
     margin: 40px;
+    padding:10px 10px;
+    background-image: linear-gradient(to bottom, #C3EBDD ,white );
 }
 
     
