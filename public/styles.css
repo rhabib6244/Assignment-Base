@@ -49,7 +49,6 @@ li {
     padding:10px 10px;
     background-image: linear-gradient(to bottom, #C3EBDD ,white );
 }
-
-.restaurant {
+li.name {
     font-weight: bold;
 }
