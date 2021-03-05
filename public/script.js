@@ -12,7 +12,8 @@ async function windowActions() {
     form.addEventListener('submit', async (event) => {
         event.preventDefault();
         console.log("submit fired");
-        const d = data.filter(((record) => record.category.toUpperCase() === search.value.toUpperCase()));
+        const d = data.filter(
+           ((record) => record.category.toUpperCase().includes(search.value.toUpperCase())))
         const display = d.reduce((unique, o) => {
           if(!unique.some(obj => obj.address_line_1 === o.address_line_1 && obj.city === o.city && obj.state === o.state)) {
             unique.push(o);
@@ -26,11 +27,11 @@ async function windowActions() {
             const html = display.map(place => {
               return (`
               <li>
-              <span class='name'>${place.name} </span> 
-              <span class='category'>${place.category}</span>
-              <span class='address'>${place.address_line_1}</span>
-              <span class='location'>${place.city}, ${place.state}</span>
-              <span class='zip'>${place.zip}</span>
+                <span class='name'>${place.name}</span> 
+                <span class='category'>${place.category}</span>
+                <span class='address'>${place.address_line_1}</span>
+                <span class='location'>${place.city}, ${place.state}</span>
+                <span class='zip'>${place.zip}</span>
               </li>
             `);
     })
