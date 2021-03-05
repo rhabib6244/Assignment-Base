@@ -1,6 +1,10 @@
 html {
     background-color: #8987B2;
 }
+h1 {
+    color: white;
+}
+
 .assign1 {
     margin-top: 30px;
     text-decoration: underline;
@@ -39,14 +43,14 @@ html {
 
 .target-list {
     margin-top: 120px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 li {
-    height: 140px;
-    width: 360px;
+    height: 160px;
+    width: 430px;
     margin: 40px;
-    padding:10px 10px;
+    padding:10px 12px;
     justify-content: space-between;
     background-image: linear-gradient(to bottom, #C3EBDD ,white );
     margin: -4px; 
@@ -54,6 +58,11 @@ li {
 
 .name {
     font-weight: bold;
+    font-size: 25px;
+}
+
+.address,.location,.zip {
+    font-style: italic;
 }
 span {
     display: block;
