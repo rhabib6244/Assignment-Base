@@ -1,5 +1,5 @@
 body {
-    background-color:#8987B2;
+    background-color: #8987B2;
 }
 .assign1 {
     margin-top: 30px;
@@ -8,8 +8,12 @@ body {
     margin-left: 15px;
 }
 
+.assignment {
+    position: absolute;
+
+}
 .container{
-    min-height: 100%;
+    height: 700px;
 }
 
 .flex-outer {
@@ -25,13 +29,12 @@ body {
     border-radius: 15px;
     background: #eee;
     justify-content: space-between;
-}
+  }
+ 
 .content {
     width: 960px;
     margin: auto;
 }
-
-
 .column-background {
     background-color: blue;
     height: 100px;
@@ -39,7 +42,6 @@ body {
 
 .target-list {
     margin-top: 115px;
-    position: relative;
 }
 
 li {
@@ -48,11 +50,5 @@ li {
     width: 350px;
     margin: 40px;
     padding:10px 10px;
-    font-family: helvetica;
     background-image: linear-gradient(to bottom, #C3EBDD ,white );
 }
-
-    
-
- 
-
