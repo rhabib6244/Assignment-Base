@@ -35,7 +35,7 @@ async function windowActions() {
               </li>
             `);
     })
-        targetList.innerHTML = html;
+        targetList.innerHTML = html.join('');
         
         })
         console.log(display);
