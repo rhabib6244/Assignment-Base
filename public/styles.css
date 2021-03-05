@@ -2,11 +2,13 @@ body {
     background-color: #C3EBDD;
 }
 
+h4 {
+    text-decoration: underline;
+}
 .assignment {
     position: absolute;
     top: 60px;
     font-family: Helvetica;
-    text-decoration: underline;
 }
 .container{
     height: 700px;
@@ -26,18 +28,3 @@ body {
     justify-content: space-between;
   }
 
- 
-.content {
-    width: 960px;
-    margin: auto;
-}
-
-
-.column-background {
-    background-color: blue;
-    height: 100px;
-}
-
-.targetBox {
-
-}
