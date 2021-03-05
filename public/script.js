@@ -16,7 +16,9 @@ async function windowActions() {
         };
         display.forEach((item) => {
             const appendItem = document.createElement("li");
+            const name = item.name;
             appendItem.innerText = (item.name + "\n" + item.category + "\n" + item.address_line_1 + "\n" + item.city + ", " + item.state + "\n" + item.zip);
+            appendItem.className+="restaurant";
             targetList.append(appendItem);
         })
         console.log(display);

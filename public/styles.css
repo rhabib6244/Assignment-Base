@@ -1,4 +1,4 @@
-body {
+html {
     background-color: #8987B2;
 }
 .assign1 {
@@ -11,9 +11,6 @@ body {
 .assignment {
     position: absolute;
 
-}
-.container{
-    height: 700px;
 }
 
 .flex-outer {
@@ -44,11 +41,15 @@ body {
     margin-top: 115px;
 }
 
+
 li {
-    background-color: red;
     height: 140px;
     width: 350px;
     margin: 40px;
     padding:10px 10px;
     background-image: linear-gradient(to bottom, #C3EBDD ,white );
+}
+
+.restaurant {
+    font-weight: bold;
 }
