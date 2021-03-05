@@ -28,3 +28,21 @@ h4 {
     justify-content: space-between;
   }
 
+ 
+.content {
+    width: 960px;
+    margin: auto;
+}
+
+
+.column-background {
+    background-color: blue;
+    height: 100px;
+}
+
+li {
+    background-color: red;
+    height: 100px;
+    width: 300px;
+    margin: 40px;
+}
