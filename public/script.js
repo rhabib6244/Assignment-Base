@@ -9,7 +9,7 @@ async function windowActions() {
 
    
 
-    form.addEventListener('submit', async (event) => {
+    form.addEventListener('keyup', async (event) => {
         event.preventDefault();
         console.log("submit fired");
         const d = data.filter(
@@ -35,6 +35,8 @@ async function windowActions() {
               </li>
             `);
     })
+        if (search.value.length === 0) {html.length = 0}
+        else html.length = 75;
         targetList.innerHTML = html.join('');
         
         })
