@@ -36,6 +36,12 @@ h1 {
     background: #eee;
     justify-content: space-between;
   }
+
+  .flex-outer input{
+      position: absolute;
+      width: 320px;
+      margin-left: 70px;
+  }
  
 .content {
     width: 960px;
