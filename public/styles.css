@@ -1,22 +1,18 @@
 html {
     background-color: #8987B2;
 }
-
 .container {
     max-width: 960px;
     margin-bottom: 30px;
 }
-
 h1 {
     color: white;
     font-family: 'Akaya Telivigala', cursive;
     font-weight: bold;
 }
-
 .member-names {
     margin-left: 10px;
 }
-
 .assign1 {
     margin-top: 30px;
     text-decoration: underline;
@@ -24,12 +20,9 @@ h1 {
     margin-left: 15px;
     font-family:'Open Sans', sans-serif;
 }
-
 .assignment {
     position: absolute;
-
 }
-
 .flex-outer {
     display: flex;
     flex-wrap: wrap;
@@ -52,34 +45,29 @@ h1 {
     background-color: blue;
     height: 100px;
 }
-
-
 .target-list {
     margin-top: 120px;
     margin-left: 10px;
 }
 
 li {
+    height: 160px;
     height: 185px;
     width: 430px;
     margin: 40px;
     padding:10px 12px;
     justify-content: space-between;
     background-image: linear-gradient(to bottom, #C3EBDD ,white );
-    margin: -4px;
+    margin: -4px; 
     margin-bottom: 40px; 
 }
-
 .name {
     font-weight: bold;
     font-size: 25px;
 }
-
 .address,.location,.zip {
     font-style: italic;
 }
-
 span {
     display: block;
 }
-    
